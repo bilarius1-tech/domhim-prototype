@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ДомХим — магазин бытовой химии</title>
+  <meta name="description" content="Прототип интернет-магазина бытовой химии: Head & Shoulders 360 мл и Fairy 450 мл.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+  <div class="topbar">
+    <div class="wrap">
+      <nav>
+        <a href="index.html" class="is-active">Главная</a>
+        <a href="about.html">О компании</a>
+        <a href="promo.html">Акции</a>
+        <a href="delivery.html">Доставка</a>
+        <a href="payment.html">Оплата</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+      <span class="topbar-user" title="Личный кабинет (заглушка)" aria-hidden="true">👤</span>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="logo" href="index.html">
+        <span class="logo-name">ДомХим</span>
+        <span class="logo-sub">Магазин бытовой химии</span>
+      </a>
+      <div class="header-contacts">
+        г. Москва, Примерный проспект, 1<br>
+        <b>+7 (000) 000-00-00</b>
+      </div>
+      <form class="search" data-search>
+        <input type="search" name="q" placeholder="Поиск по каталогу" aria-label="Поиск">
+        <button type="submit" aria-label="Искать">🔍</button>
+      </form>
+      <div class="header-tools">
+        <button class="cart-btn" type="button" data-open-cart aria-label="Корзина">
+          <span class="bag">🛒<span class="cart-count" data-cart-count>0</span></span>
+          <span class="sum" data-cart-total>0 ₽</span>
+        </button>
+        <button class="burger" type="button" data-burger aria-label="Меню">☰</button>
+      </div>
+    </div>
+    <div class="wrap mobile-nav" id="mobile-nav">
+      <form class="mobile-search" data-search>
+        <input type="search" name="q" placeholder="Поиск по каталогу">
+        <button class="btn btn-green" type="submit">Найти</button>
+      </form>
+      <a href="index.html">Главная</a>
+      <a href="catalog.html">Каталог</a>
+      <a href="catalog.html?cat=shampoo">Шампуни Head &amp; Shoulders</a>
+      <a href="catalog.html?cat=fairy">Средства для посуды Fairy</a>
+      <a href="about.html">О компании</a>
+      <a href="promo.html">Акции</a>
+      <a href="delivery.html">Доставка</a>
+      <a href="payment.html">Оплата</a>
+      <a href="contacts.html">Контакты</a>
+    </div>
+  </header>
+
+  <main class="home-main">
+    <div class="wrap hero-grid">
+      <aside class="cat-card">
+        <h2>Категории <span>☰</span></h2>
+        <ul>
+          <li><a href="catalog.html?cat=shampoo">Шампуни Head &amp; Shoulders <span>›</span></a></li>
+          <li><a href="catalog.html?cat=fairy">Средства для посуды Fairy <span>›</span></a></li>
+          <li><a href="catalog.html">Весь каталог <span>›</span></a></li>
+          <li><a href="promo.html">Акции <span>›</span></a></li>
+          <li><a href="delivery.html">Доставка и оплата <span>›</span></a></li>
+        </ul>
+        <a class="cat-all" href="catalog.html">все категории →</a>
+      </aside>
+      <section class="hero" aria-label="Баннер">
+        <div class="hero-slide is-on">
+          <div>
+            <span class="hero-kicker">Хит линейки Fairy</span>
+            <h2>Сочный лимон — до двух раз больше чистой посуды</h2>
+            <p>Концентрированное средство 450 мл. Цена ориентировочная, по открытым витринам.</p>
+            <a class="btn btn-green" href="catalog.html?id=fy-limon">В каталог</a>
+          </div>
+          <div class="hero-photo"><img src="images/ui/hero-lemon.webp" alt="Fairy Сочный лимон"></div>
+        </div>
+        <div class="hero-slide">
+          <div>
+            <span class="hero-kicker">Head &amp; Shoulders 360 мл</span>
+            <h2>Вся линейка шампуня против перхоти</h2>
+            <p>15 реальных вариантов по 360 мл: основной уход, 2 в 1 и мужская серия Men Ultra.</p>
+            <a class="btn btn-green" href="catalog.html?cat=shampoo">Смотреть шампуни</a>
+          </div>
+          <div class="hero-photo"><img src="images/products/hs-osnovnoy.webp" alt="Head & Shoulders Основной уход"></div>
+        </div>
+        <div class="hero-slide">
+          <div>
+            <span class="hero-kicker">Для дома</span>
+            <h2>Чистота стёкол и кухонных поверхностей</h2>
+            <p>Прототип витрины бытовой химии. Сейчас в каталоге — две линейки, которые запросил клиент.</p>
+            <a class="btn btn-green" href="catalog.html">Открыть каталог</a>
+          </div>
+          <div class="hero-photo"><img src="images/ui/hero-1.webp" alt="Мытьё стекла"></div>
+        </div>
+        <div class="hero-nav">
+          <button type="button" data-hero="prev" aria-label="Назад">‹</button>
+          <button type="button" data-hero="next" aria-label="Вперёд">›</button>
+        </div>
+      </section>
+    </div>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="tiles">
+          <a class="tile" href="catalog.html?cat=shampoo">
+            <div class="tile-img"><img src="images/products/hs-yabloko.webp" alt="" style="object-fit:contain;background:#f7f7f7"></div>
+            <div class="tile-body"><span class="chip">Шампуни</span><span class="btn btn-green">Перейти</span></div>
+          </a>
+          <a class="tile" href="catalog.html?cat=fairy">
+            <div class="tile-img"><img src="images/products/fy-limon.webp" alt="" style="object-fit:contain;background:#f7f7f7"></div>
+            <div class="tile-body"><span class="chip">Для посуды Fairy</span><span class="btn btn-green">Перейти</span></div>
+          </a>
+          <a class="tile" href="delivery.html">
+            <div class="tile-img"><img src="images/ui/cat-laundry.webp" alt=""></div>
+            <div class="tile-body"><span class="chip">Доставка</span><span class="btn btn-green">Перейти</span></div>
+          </a>
+          <a class="tile" href="promo.html">
+            <div class="tile-img"><img src="images/ui/cat-dishes.webp" alt=""></div>
+            <div class="tile-body"><span class="chip">Акции</span><span class="btn btn-green">Перейти</span></div>
+          </a>
+        </div>
+        <div class="center"><a class="btn btn-green" href="catalog.html">Все категории →</a></div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Новинки магазина</h2>
+          <div class="arrows">
+            <button class="arrow-btn" type="button" data-new="prev" aria-label="Назад">‹</button>
+            <button class="arrow-btn" type="button" data-new="next" aria-label="Вперёд">›</button>
+          </div>
+        </div>
+        <div class="cards-row" id="new-products"></div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="wrap promos">
+        <div class="promo promo-green">
+          <div>
+            <h3>Шампуни Head &amp; Shoulders 360 мл</h3>
+            <a class="btn" href="catalog.html?cat=shampoo">В каталог</a>
+          </div>
+          <img src="images/ui/promo-laundry.webp" alt="">
+        </div>
+        <div class="promo promo-lime">
+          <div>
+            <h3>Fairy 450 мл — линейка для посуды</h3>
+            <a class="btn" href="catalog.html?cat=fairy">В каталог</a>
+          </div>
+          <img src="images/ui/promo-sponge.webp" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="wrap split">
+        <div class="about-block">
+          <h2>Магазин бытовой химии</h2>
+          <p>Этот прототип собран, чтобы показать клиенту витрину, карточки товара и корзину. В каталоге — только две запрошенные линейки: шампунь Head &amp; Shoulders 360 мл и средство для мытья посуды Fairy 450 мл.</p>
+          <p>«Шелден шелдорс» в заявке — это Head &amp; Shoulders (Хэд энд Шолдерс). Названия вариантов, описания и фото взяты с открытых витрин, цены — ориентировочные на ноябрь 2026 года.</p>
+          <p>Оформить заказ нельзя: кнопка в корзине специально никуда не ведёт.</p>
+        </div>
+        <div class="deliver-card">
+          <div>
+            <h2>Условия доставки</h2>
+            <p>Ознакомьтесь с условиями доставки по городу. В прототипе это демо-текст. Приятных покупок!</p>
+            <a class="btn btn-green" href="delivery.html">Подробнее</a>
+          </div>
+          <img src="images/ui/courier.webp" alt="Курьер">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="wrap two-col">
+        <div>
+          <h2>Отзывы покупателей</h2>
+          <div class="review"><span class="who">Ольга Афанасьева</span><span class="date">21.10.2026</span><p>Пример отзыва для прототипа: заказывала Fairy и шампунь, всё пришло аккуратно. Здесь позже будут настоящие отзывы.</p></div>
+          <div class="review"><span class="who">Игорь С.</span><span class="date">04.11.2026</span><p>Пример отзыва: удобно смотреть карточки и корзину. Это демонстрационный текст, не реальная покупка.</p></div>
+        </div>
+        <div>
+          <h2>Новости</h2>
+          <div class="news">
+            <article><img src="images/ui/news-1.webp" alt=""><h3>Как выбрать средство для посуды</h3></article>
+            <article><img src="images/ui/news-2.webp" alt=""><h3>Уход за кожей головы зимой</h3></article>
+            <article><img src="images/ui/news-3.webp" alt=""><h3>Доставка по городу: демо-условия</h3></article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <h3>ДомХим</h3>
+        <p>Магазин бытовой химии. Это кликабельный прототип витрины для показа клиенту: без оплаты, доставки и личного кабинета.</p>
+        <p>Head &amp; Shoulders и Fairy — товарные знаки Procter &amp; Gamble. Магазин не является официальным представителем брендов.</p>
+      </div>
+      <div>
+        <h3>Покупателям</h3>
+        <a href="catalog.html">Каталог</a><br>
+        <a href="delivery.html">Доставка</a><br>
+        <a href="payment.html">Оплата</a><br>
+        <a href="promo.html">Акции</a>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <a href="about.html">О компании</a><br>
+        <a href="contacts.html">Контакты</a>
+      </div>
+      <div>
+        <h3>Контакты (демо)</h3>
+        <p>г. Москва, Примерный проспект, 1<br>+7 (000) 000-00-00<br>hello@example.com</p>
+      </div>
+    </div>
+    <div class="wrap copy">© 2026 ДомХим · прототип · цены ориентировочные, ноябрь 2026, по открытым розничным витринам.</div>
+  </footer>
+
+  <div class="drawer-bg" id="cart-bg"></div>
+  <aside class="drawer" id="cart-drawer" aria-label="Корзина">
+    <div class="drawer-head">
+      <h2>Корзина</h2>
+      <button type="button" class="modal-close" data-close-cart aria-label="Закрыть">×</button>
+    </div>
+    <div class="drawer-body" id="cart-items"></div>
+    <div class="drawer-foot">
+      <div class="totals"><span>Итого</span><span id="cart-sum">0 ₽</span></div>
+      <button type="button" class="checkout" data-checkout>Оформить заказ</button>
+      <p class="hint">Кнопка никуда не ведёт — это прототип без оформления заказа.</p>
+    </div>
+  </aside>
+
+  <div class="modal-bg" id="product-modal">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-name">
+      <button type="button" class="modal-close" data-close-modal aria-label="Закрыть">×</button>
+      <div class="modal-grid">
+        <div class="modal-img"><img id="modal-img" alt=""></div>
+        <div>
+          <div class="p-meta" id="modal-meta"></div>
+          <h2 id="modal-name"></h2>
+          <div class="p-art" id="modal-art"></div>
+          <div class="p-price" id="modal-price"></div>
+          <div class="p-stock">В наличии</div>
+          <p id="modal-desc"></p>
+          <div class="p-actions">
+            <div class="qty"><button type="button" data-step="-1">−</button><input type="number" min="1" value="1"><button type="button" data-step="1">+</button></div>
+            <button type="button" class="btn btn-green" id="modal-add" data-add="">В корзину</button>
+          </div>
+          <p class="src" id="modal-src"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    document.getElementById("modal-add").addEventListener("click", function () {
+      this.setAttribute("data-add", document.getElementById("product-modal").dataset.id || "");
+    }, true);
+  </script>
+</body>
+</html>

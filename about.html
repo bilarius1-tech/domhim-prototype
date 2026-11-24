@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>О компании — ДомХим</title>
+  <meta name="description" content="О компании">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="about">
+  <div class="topbar">
+    <div class="wrap">
+      <nav>
+        <a href="index.html">Главная</a>
+        <a href="about.html" class="is-active">О компании</a>
+        <a href="promo.html">Акции</a>
+        <a href="delivery.html">Доставка</a>
+        <a href="payment.html">Оплата</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+      <span class="topbar-user" title="Личный кабинет (заглушка)" aria-hidden="true">👤</span>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="logo" href="index.html">
+        <span class="logo-name">ДомХим</span>
+        <span class="logo-sub">Магазин бытовой химии</span>
+      </a>
+      <div class="header-contacts">
+        г. Москва, Примерный проспект, 1<br>
+        <b>+7 (000) 000-00-00</b>
+      </div>
+      <form class="search" data-search>
+        <input type="search" name="q" placeholder="Поиск по каталогу" aria-label="Поиск">
+        <button type="submit" aria-label="Искать">🔍</button>
+      </form>
+      <div class="header-tools">
+        <button class="cart-btn" type="button" data-open-cart aria-label="Корзина">
+          <span class="bag">🛒<span class="cart-count" data-cart-count>0</span></span>
+          <span class="sum" data-cart-total>0 ₽</span>
+        </button>
+        <button class="burger" type="button" data-burger aria-label="Меню">☰</button>
+      </div>
+    </div>
+    <div class="wrap mobile-nav" id="mobile-nav">
+      <form class="mobile-search" data-search>
+        <input type="search" name="q" placeholder="Поиск по каталогу">
+        <button class="btn btn-green" type="submit">Найти</button>
+      </form>
+      <a href="index.html">Главная</a>
+      <a href="catalog.html">Каталог</a>
+      <a href="catalog.html?cat=shampoo">Шампуни Head &amp; Shoulders</a>
+      <a href="catalog.html?cat=fairy">Средства для посуды Fairy</a>
+      <a href="about.html">О компании</a>
+      <a href="promo.html">Акции</a>
+      <a href="delivery.html">Доставка</a>
+      <a href="payment.html">Оплата</a>
+      <a href="contacts.html">Контакты</a>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="wrap page-head prose">
+      <div class="crumbs"><a href="index.html">Главная</a> / О компании</div>
+      <h1>О компании</h1>
+      <p>«ДомХим» — нейтральное название-заглушка для прототипа интернет-магазина бытовой химии. Страница нужна, чтобы клиент увидел структуру сайта, как на согласованном референсе.</p><p>В рабочей версии здесь появится текст заказчика: история, реквизиты и фото склада или магазина.</p><p>Сейчас в ассортименте только две линейки, которые были в заявке: шампунь Head &amp; Shoulders 360 мл и средство для мытья посуды Fairy 0,45 л.</p>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <h3>ДомХим</h3>
+        <p>Магазин бытовой химии. Это кликабельный прототип витрины для показа клиенту: без оплаты, доставки и личного кабинета.</p>
+        <p>Head &amp; Shoulders и Fairy — товарные знаки Procter &amp; Gamble. Магазин не является официальным представителем брендов.</p>
+      </div>
+      <div>
+        <h3>Покупателям</h3>
+        <a href="catalog.html">Каталог</a><br>
+        <a href="delivery.html">Доставка</a><br>
+        <a href="payment.html">Оплата</a><br>
+        <a href="promo.html">Акции</a>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <a href="about.html">О компании</a><br>
+        <a href="contacts.html">Контакты</a>
+      </div>
+      <div>
+        <h3>Контакты (демо)</h3>
+        <p>г. Москва, Примерный проспект, 1<br>+7 (000) 000-00-00<br>hello@example.com</p>
+      </div>
+    </div>
+    <div class="wrap copy">© 2026 ДомХим · прототип · цены ориентировочные, ноябрь 2026, по открытым розничным витринам.</div>
+  </footer>
+
+  <div class="drawer-bg" id="cart-bg"></div>
+  <aside class="drawer" id="cart-drawer" aria-label="Корзина">
+    <div class="drawer-head">
+      <h2>Корзина</h2>
+      <button type="button" class="modal-close" data-close-cart aria-label="Закрыть">×</button>
+    </div>
+    <div class="drawer-body" id="cart-items"></div>
+    <div class="drawer-foot">
+      <div class="totals"><span>Итого</span><span id="cart-sum">0 ₽</span></div>
+      <button type="button" class="checkout" data-checkout>Оформить заказ</button>
+      <p class="hint">Кнопка никуда не ведёт — это прототип без оформления заказа.</p>
+    </div>
+  </aside>
+
+  <div class="modal-bg" id="product-modal">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-name">
+      <button type="button" class="modal-close" data-close-modal aria-label="Закрыть">×</button>
+      <div class="modal-grid">
+        <div class="modal-img"><img id="modal-img" alt=""></div>
+        <div>
+          <div class="p-meta" id="modal-meta"></div>
+          <h2 id="modal-name"></h2>
+          <div class="p-art" id="modal-art"></div>
+          <div class="p-price" id="modal-price"></div>
+          <div class="p-stock">В наличии</div>
+          <p id="modal-desc"></p>
+          <div class="p-actions">
+            <div class="qty"><button type="button" data-step="-1">−</button><input type="number" min="1" value="1"><button type="button" data-step="1">+</button></div>
+            <button type="button" class="btn btn-green" id="modal-add" data-add="">В корзину</button>
+          </div>
+          <p class="src" id="modal-src"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    document.getElementById("modal-add").addEventListener("click", function () {
+      this.setAttribute("data-add", document.getElementById("product-modal").dataset.id || "");
+    }, true);
+  </script>
+</body>
+</html>
